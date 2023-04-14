@@ -27,7 +27,7 @@ function sample_callback() {
 }
 
 /**
- * かといってこのように並列で書くと処理の順序が安定しない
+ * かといってこのように直列的に書くと処理の順序が安定しない
  */
 function sample_timing_problem() {
     aFunc1(100, function(data) {
