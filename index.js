@@ -33,9 +33,11 @@ myAsync();
 
 buy(90)
     .then((res) => {
+        // 非同期処理が成功するとこのthenに処理が流れます
         console.log(res)
     })
     .catch((e) => {
+        // 非同期処理が失敗するとcatchに処理が流れます
         console.log(e)
     })
     .finally(() => {
